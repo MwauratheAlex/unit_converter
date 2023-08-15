@@ -39,6 +39,13 @@ button {
     margin-bottom: 25px;
 }
 
+button:hover {
+    background: #e0dafd;
+    box-shadow: 0 0 10px #B295FF;
+    border: 2px solid #dcd2fb;
+    color: rgb(47, 47, 47);
+}
+
 .top {
     background: #6943FF;
     display: flex;
@@ -63,4 +70,8 @@ button {
 
 .result-item h2 {
     color: #CCC1FF;
+}
+
+p {
+    height: 20px;
 }
