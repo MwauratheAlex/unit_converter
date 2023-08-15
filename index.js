@@ -1,14 +1,34 @@
 const convertBtn = document.getElementById("convert-btn")
 const inputEl = document.getElementById("input-el")
 
+const lengthP = document.getElementById("length-p")
+const volumeP = document.getElementById("volume-p")
+const massP = document.getElementById("mass-p")
+
+const error = document.getElementById("error")
+
 convertBtn.addEventListener("click", () => {
     const input = Number(inputEl.value)
 
+    if (isNaN(input) || isNaN(parseFloat(input))) {
+        error.textContent = "Please enter a valid value"
+        return
+    }
+    error.textContent = ""
     const convertedValues = convert(input)
-    console.log(convertedValues)
+    render(input, convertedValues)
     
 })
 
+function render(input, values) {
+    const lengthText = `${input} meters = ${values.metersFeet} feet | 20 feet = ${values.feetMeters} meters`
+    const volumeText = `${input} liters = ${values.litresGalons} gallons | 20 gallons = ${values.galonsLetres} liters`
+    const massText = `${input} kilos = ${values.kilosPounds} pounds | 20 pounds = ${values.poundsKilos} kilos`
+
+    lengthP.textContent = lengthText
+    volumeP.textContent = volumeText
+    massP.textContent = massText
+}
 
 
 function convert(input) {

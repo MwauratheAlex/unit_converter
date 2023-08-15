@@ -11,19 +11,23 @@
         <h1>Metric/Imperial Unit Conversion</h1>
         <input type="text" value="0" id="input-el" />
         <button id="convert-btn">Convert</button>
+        <h4 id="error"></h4>
       </div>
       <div class="results">
+        <!-- length -->
         <div class="result-item">
           <h2>Length (Meter/Feet)</h2>
-          <p>0 meters = 0 feet | 0 feet = 0 meters</p>
+          <p id="length-p">0 meters = 0 feet | 0 feet = 0 meters</p>
         </div>
+        <!-- volume -->
         <div class="result-item">
           <h2>Volume (Liters/Gallons)</h2>
-          <p>0 liters = 0 gallons | 0 gallons = 0 liters</p>
+          <p id="volume-p">0 liters = 0 gallons | 0 gallons = 0 liters</p>
         </div>
+        <!-- mass -->
         <div class="result-item">
           <h2>Mass (Kilograms/Pounds)</h2>
-          <p>0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
+          <p id="mass-p">0 kilos = 0 pounds | 0 pounds = 0 kilos</p>
         </div>
       </div>
     </div>
