@@ -1,3 +1,22 @@
 body {
     margin: 0;
+    background: #1C1C1C;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+
+.main {
+    max-width: 70%;
+    margin: 40px auto;
+}
+
+.top {
+    background: #6943FF;
+    display: flex;
+    flex-direction: column;
+}
+
+.results {
+    background: #1F2937;
 }
