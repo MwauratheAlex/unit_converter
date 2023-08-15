@@ -7,16 +7,60 @@ body {
 }
 
 .main {
-    max-width: 70%;
+    max-width: 729px;
     margin: 40px auto;
+    border-radius: 16px;
+    border-radius: 16px;
+    box-shadow: 0 0 6px rgb(142, 140, 140);
+}
+
+button, input {
+    background: white;
+    color: #3D3D3D;
+    border: 2px solid white;
+    width: 117px;
+    padding: 10px 0;
+    font-weight: bold;
+    font-size: large;
+    margin: 17px auto;
+    border-radius: 8px;
+    text-align: center;
+}
+
+input {
+    border: 2px solid #B295FF;
+    background: none;
+    color: white;
+    padding: 20px 0;
+    font-size: 3rem;
+}
+
+button {
+    margin-bottom: 25px;
 }
 
 .top {
     background: #6943FF;
     display: flex;
     flex-direction: column;
+    padding: 20px;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
 }
 
 .results {
     background: #1F2937;
+    padding: 20px;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
+}
+
+.result-item {
+    background: #273549;
+    padding: 20px;
+    margin: 20px;
+}
+
+.result-item h2 {
+    color: #CCC1FF;
 }
